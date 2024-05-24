@@ -12,8 +12,12 @@ def load_examples(file_path):
         lines = file.readlines()
         for line in lines:
             if line.strip():
-                query, answer = line.strip().split(":")
-                examples.append({"query": query.strip(), "answer": answer.strip()})
+                # Split only at the first occurrence of ':'
+                query, answer = line.strip().split(":", 1)
+                # Remove the surrounding 'query: "' and 'answer: "' and the ending '"'
+                query = query.replace('query: "', '').replace('"', '').strip()
+                answer = answer.replace('answer: "', '').replace('"', '').strip()
+                examples.append({"query": query, "answer": answer})
     return examples
 
 # Generate prompt using langchain
