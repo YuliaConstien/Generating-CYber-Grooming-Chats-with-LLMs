@@ -48,4 +48,11 @@ For Wizard-Vicuna-uncensored:
 python self_refine_prompting.py --model Wizard-Vicuna-uncensored --num_chats 200
 ```
 
+### Chat evaluation
+
+To evaluate the chats using LLMs for the grammatical correctness attribute, use: 
+```
+python grammatical_correctness.py --model <model_name> --chats_file <chats_file_path.csv>
+```
+
 
