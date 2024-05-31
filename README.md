@@ -9,8 +9,10 @@ $ pip install requirements.txt
 ```
 
 Set your OpenAI API key:
+```
 # https://beta.openai.com/account/api-keys
 export OPENAI_API_KEY=(YOUR OPENAI API KEY)
+```
 
 To generate chats using the few-shot prompting method, use the following commands:
 
