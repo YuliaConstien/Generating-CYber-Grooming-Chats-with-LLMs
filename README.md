@@ -16,7 +16,7 @@ export OPENAI_API_KEY=(YOUR OPENAI API KEY)
 
 To generate chats using the few-shot prompting method, use the following commands:
 
-###For GPT-3.5-turbo:
+### For GPT-3.5-turbo:
 ```
 python main.py --method few_shot_prompting --model gpt-3.5-turbo --num_chats 200 --examples_file Data/few_shot_examples.txt
 
