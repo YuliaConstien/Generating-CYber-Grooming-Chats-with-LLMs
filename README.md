@@ -65,3 +65,20 @@ To evaluate the chats using LLMs for the prompt relevance attribute, use:
 python prompt_relevance.py --model <model_name> --chats_file <chats_file_path.csv>
 ```
 
+For training XLM-R on generated data: 
+
+```
+python main.py --train
+```
+
+For evaluating the trained classification model: 
+```
+python main.py --evaluate --method --all
+python main.py --evaluate --method --f1
+python main.py --evaluate --method --classification_report
+python main.py --evaluate --method --confusion_matrix
+python main.py --evaluate --method --roc
+
+```
+
+
