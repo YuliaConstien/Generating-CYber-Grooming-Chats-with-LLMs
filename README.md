@@ -55,4 +55,13 @@ To evaluate the chats using LLMs for the grammatical correctness attribute, use:
 python grammatical_correctness.py --model <model_name> --chats_file <chats_file_path.csv>
 ```
 
+To evaluate the chats using LLMs for the coherence and overall quality attribute, use: 
+```
+python coherence_and_quality.py --model <model_name> --chats_file <chats_file_path.csv>
+```
+
+To evaluate the chats using LLMs for the prompt relevance attribute, use: 
+```
+python prompt_relevance.py --model <model_name> --chats_file <chats_file_path.csv>
+```
 
