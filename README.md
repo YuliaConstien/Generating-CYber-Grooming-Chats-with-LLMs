@@ -80,5 +80,16 @@ python main.py --evaluate --method --confusion_matrix
 python main.py --evaluate --method --roc
 
 ```
+To download XMLRoBERTa fine-tuned in the multilingual setup from the Huggingface Hub use:
+
+```
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
+
+tokenizer = AutoTokenizer.from_pretrained("Constien/xmlRoberta_all_lang")
+
+model = AutoModelForSequenceClassification.from_pretrained("Constien/xmlRoberta_all_lang")
+```
+
+Run CheckList.ipynb to reproduce the capabilties tests
 
 
