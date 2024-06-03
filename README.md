@@ -1,6 +1,6 @@
 # Generating-Cyber-Grooming-Chats-with-LLMs
-Repository for the Individual Research Module at the University of Potsdam on cyber grooming detection in online Chats.
-The goal of the project is to classify online chats into predatory and non-predatory using the multilingual model XLMRoBERTa. The training and evaluation of the model were conducted in 3 different settings to asses its ability to distinguish between cyber grooming and non-cyber grooming conversations in English, German, French and Dutch. The model was evaluated additionally using the CheckList framework to test some of its specific capabilities. The dataset used in the project is the publicly available PAN12 dataset, provided by the PAN Lab at the 2012 CLEF conference for a shared task on sexual predator identification.
+The goal of this project is to leverage large language models (LLMs) to generate cyber grooming chats. We examine three types of prompting methods - few-shot promoting, chain￾of-thought promoting, and iterative-self-refine promoting - on two LLMs: GPT-3.5-turbo and Wizard-Vicuna-30B-uncensored. We assess the quality of the generated chats using a 5-point rating system on three attributes, combin￾ing both human and LLM evaluations. To test the effectiveness of the gener￾ated dataset, we train a multilingual Transformer classifier on the data in dif￾ferent training settings, comparing the results to a baseline model trained on a dataset, containing real cyber grooming chats. Additionally, to avoid over￾estimating the model’s performance, we utilize the CheckList framework,
+a task agnostic methodology for testing models linguistic capabilities. 
 
 ## Setup 
 Install all necessary packages with requirements.txt
