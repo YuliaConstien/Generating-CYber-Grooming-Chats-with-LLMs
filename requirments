@@ -1,0 +1,10 @@
+torch==1.13.1
+numpy==1.22.4
+pandas==1.4.4
+transformers==4.27.2
+evaluate==0.4.0
+sikit-learn==1.2.2
+seaborn==0.12.2
+matplotlib==3.7.1
+cheklist==0.0.11
+beautifulsoup4==4.11.2
